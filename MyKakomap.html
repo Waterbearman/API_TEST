@@ -28,7 +28,7 @@
         //lat, lng 위치로 이동도 학소 , 그 위에 마커도 쓴다
         function setCenter(lat, lng) 
         {            
-            maker.setMap(null); //기존마커 삭제
+            marker.setMap(null); //기존마커 삭제
             var pos = new kakao.maps.LatLng(lat, lng);
             map.setCenter(pos); // 맵 이동
             marker = new kakao.maps.Marker({position:pos});
